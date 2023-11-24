@@ -30,7 +30,7 @@ const PendingTable = () => {
       case 'high':
         return '#7D2424';
       default:
-        return 'inherit'; // Use 'inherit' to keep the original color
+        return 'inherit';
     }
   };
 

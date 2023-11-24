@@ -14,11 +14,10 @@ const SideMenu = () => {
       <ul className='list'>
         <li><a href="#">OverView</a></li>
         <li><a href="#">Onboarding</a></li>
-        <li><a href="#">Monitoring</a></li>
+        <li><a href="/DataTable">Monitoring</a></li>
         <li><a href="#">Flagging</a></li>
         <li><a href="#">Source of Income</a></li>
         <li><a href="#">UAR</a></li>
-        {/* Add more menu items as needed */}
       </ul>
 
       <div className="elon">
