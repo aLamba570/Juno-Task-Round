@@ -1,43 +1,159 @@
-/* datatable.css */
+.buttton {
+  display: flex;
+  margin-bottom: 10px;
+}
 
-.data-table {
-    /* Add any styles for the data table container */
-  }
-  
-  .buttton {
-    display: flex;
-    margin-bottom: 10px;
-  }
-  
-  /* datatable.css */
 
 .buttton button {
-    margin-right: 10px;
-    padding: 8px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    color: #000;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px; /* Adjust the font size as needed */
-  }
+  margin-right: 10px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
 
-  .buttton button:hover {
-    color: rgb(127, 193, 255); /* Color for the underline, adjust as needed */
-  }
-  
-  
-  .buttton button.active {
-    border-bottom: 2px solid rgb(127, 193, 255);
-    color: rgb(127, 193, 255);
-    font-weight: bold; /* Color for the underline, adjust as needed */
-  }
-  
-  .tab-underline {
-    height: 2px;
-    margin-top: -10px;
-    background-color: #d8d2d2; /* Color for the underline, adjust as needed */
-    width: 100%; /* Make it span the full width */
-    margin-bottom: 1px; /* Adjust the distance from the buttons */
-  }
-  
+.buttton button:hover {
+  color: rgb(127, 193, 255);
+}
+
+
+.buttton button.active {
+  border-bottom: 2px solid rgb(127, 193, 255);
+  color: rgb(127, 193, 255);
+  font-weight: bold;
+}
+
+.tab-underline {
+  height: 2px;
+  margin-top: -10px;
+  background-color: #d8d2d2;
+  width: 100%;
+  margin-bottom: 1px;
+}
+
+button.close-account-button {
+  background-color: #F6D8D8;
+  color: #D13B3B;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+
+button.close-account-button:hover {
+  color: #010101;
+
+}
+
+.svgg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-card {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-button div label {
+  display: inline-block;
+  margin-top: -8px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.radio-button div {
+  display: flex;
+  align-items: center;
+}
+
+.modal-body label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-body input,
+.modal-body textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-body div {
+  margin-bottom: 15px;
+}
+
+.modal-body div input {
+  margin-right: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.modal-button.cancel {
+  background-color: #ccc;
+}
+
+.modal-button.confirm {
+  background-color: #F6D8D8;
+  color: white;
+}
